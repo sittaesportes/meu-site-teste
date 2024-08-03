@@ -62,8 +62,22 @@
             bottom: 0;
             width: 100%;
         }
+        .cta-button {
+            background-color: #004aad;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
     </style>
+
+    
+    <!-- Substitua pelo seu código de verificação de domínio -->
     <meta name="facebook-domain-verification" content="your-verification-code" />
+
+    
 </head>
 <body>
     <header>
@@ -85,27 +99,36 @@
         <p>Oferecemos uma variedade de cursos para crianças, adolescentes e adultos, com treinadores experientes e apaixonados pelo esporte.</p>
         <h2>Contato</h2>
         <p>Entre em contato conosco para saber mais sobre nossos programas e como se inscrever.</p>
+        <a href="#" class="cta-button" id="registerButton">Inscreva-se Agora</a>
     </div>
     <footer>
         <p>&copy; 2024 Escola de Rugby. Todos os direitos reservados.</p>
     </footer>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1015480863314591');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1015480863314591&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        // Substitua 'YOUR_PIXEL_ID' pelo seu ID do Pixel
+        fbq('init', '1015480863314591'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1015480863314591&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Event Tracking Script -->
+    <script>
+        document.getElementById('registerButton').addEventListener('click', function() {
+            fbq('track', 'Lead');
+        });
+    </script>
 </body>
 </html>
