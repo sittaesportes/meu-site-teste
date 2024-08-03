@@ -3,11 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste do Facebook Pixel</title>
+    <title>Escola de Rugby</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #004aad;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003386;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            color: #004aad;
+        }
+        footer {
+            background-color: #004aad;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <meta name="facebook-domain-verification" content="your-verification-code" />
 </head>
 <body>
-    <h1>Bem-vindo ao Meu Site de Teste</h1>
-    <p>Este é um site simples para testar o Facebook Pixel.</p>
+    <header>
+        <h1>Escola de Rugby</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Cursos</a>
+        <a href="#">Contato</a>
+    </nav>
+    <div class="hero">
+        <h2>Bem-vindo à Nossa Escola de Rugby</h2>
+    </div>
+    <div class="content">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma escola de rugby dedicada a ensinar e promover o rugby para todas as idades e níveis de habilidade.</p>
+        <h2>Nossos Cursos</h2>
+        <p>Oferecemos uma variedade de cursos para crianças, adolescentes e adultos, com treinadores experientes e apaixonados pelo esporte.</p>
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para saber mais sobre nossos programas e como se inscrever.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Escola de Rugby. Todos os direitos reservados.</p>
+    </footer>
+
     <!-- Facebook Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
